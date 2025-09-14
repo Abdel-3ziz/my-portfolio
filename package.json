@@ -3,10 +3,13 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "homepage": "https://Abdel-3ziz.github.io/my-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^12.23.12",
@@ -17,6 +20,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",
     "autoprefixer": "^10.4.14",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.9"
